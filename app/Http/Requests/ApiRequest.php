@@ -3,7 +3,11 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-
+use App\Traits\ApiResponse;
+use Illuminate\Contracts\Validation\Validator;
+use App\Http\Requests\Request;
+use Symfony\Component\HttpFoundation\Response as Response;
+use Illuminate\Http\Exceptions\HttpResponseException;
 abstract class ApiRequest extends FormRequest
 {
     use ApiResponse;
