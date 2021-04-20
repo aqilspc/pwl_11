@@ -20,7 +20,6 @@ class TodoRequest extends ApiRequest
             $todo = $this->route('todo');
             return Auth::user()->id == $todo->user_id;
         }
-        
     }
 
     /**
